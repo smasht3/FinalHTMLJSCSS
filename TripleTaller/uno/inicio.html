@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <script src="js.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <form onsubmit="event.preventDefault(); result();">
+
+    <h2>Escribe tu nombre</h2>
+    <input id="nombre" type="text" name="nombre" required/>
+
+    <h2>Escribe tu correo</h2>
+    <input id="correo" type="text" name="correo" required/>
+
+    <h2>Escribe el asunto de tu correo</h2>
+    <input id="asunto" type="text" name="asunto" required/>
+
+    <h3>Escribe el mensaje del correo</h3>
+    <!-- Este no requiere comprobación -->
+    <textarea id="mensaje" name="mensaje" rows="6" colls="40">Mensaje</textarea>
+    <br />
+    <br />
+
+    <button type="submit" onclick="result">Envia tu correo</button>   
+    <input type="reset" value="Limpiar formulario">
+  </form>
+
+</body>
+
+</html>
